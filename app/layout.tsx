@@ -35,13 +35,13 @@ export default function RootLayout({
     <Image
     src="/logo.png"
     alt="Tyler Heating & Air LLC Logo"
-    width={80}
-    height={80}
+    width={100}
+    height={100}
     className="object-contain"
     priority
     />
     <div className="hidden sm:block">
-    <h1 className="font-black text-xl tracking-tight uppercase leading-none">
+    <h1 className="font-black text-xl tracking-tight uppercase leading-none text-slate-900">
     Tyler <span className="text-orange-600">Heating</span> & <span className="text-blue-600">Air</span> LLC
     </h1>
     <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mt-1">
@@ -63,7 +63,7 @@ export default function RootLayout({
     </a>
     </nav>
 
-    </div> {/* This was the missing closing div tag */}
+    </div>
     </header>
 
     {/* Content from page.tsx */}
