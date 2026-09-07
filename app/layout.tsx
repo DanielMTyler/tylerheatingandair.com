@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tyler Heating & Air LLC | Automotive A/C & Electrical",
-  description: "Mobile & Shop Service in Unadilla, GA. Specializing in Automotive A/C, Heat, and Electrical Diagnostics.",
+  title: "Tyler Heating & Air LLC | Mobile Automotive A/C and Heat",
+  description: "Mobile automotive A/C and heat service by appointment only, Mon-Fri. Serving 14 counties across Central Georgia including Houston, Bibb, Dooly, Peach, Crisp, Tift, and Sumter. Diagnosis, recharge, leak repair, and component replacement.",
 };
 
 export default function RootLayout({
@@ -30,24 +29,14 @@ export default function RootLayout({
     <header className="border-b bg-white sticky top-0 z-50">
     <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
 
-    {/* Logo and Branding Group */}
-    <div className="flex items-center gap-4">
-    <Image
-    src="/logo.png"
-    alt="Tyler Heating & Air LLC Logo"
-    width={100}
-    height={100}
-    className="object-contain"
-    priority
-    />
-    <div className="hidden sm:block">
-    <h1 className="font-black text-xl tracking-tight uppercase leading-none text-slate-900">
+    {/* Wordmark */}
+    <div>
+    <h1 className="font-black text-xl md:text-2xl tracking-tight uppercase leading-none text-slate-900">
     Tyler <span className="text-orange-600">Heating</span> & <span className="text-blue-600">Air</span> LLC
     </h1>
     <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mt-1">
-    Automotive A/C & Electrical
+    Mobile Automotive A/C and Heat
     </p>
-    </div>
     </div>
 
     {/* Contact Actions */}
@@ -74,17 +63,29 @@ export default function RootLayout({
     <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left">
     <div>
     <h2 className="text-white font-bold mb-4 uppercase">Tyler Heating & Air LLC</h2>
-    <p className="text-sm">Mobile & Shop Service by Appointment Only</p>
-    <p className="text-sm font-bold mt-2 text-white">Licensed & Insured</p>
+    <p className="text-sm">Mobile Automotive A/C and Heat</p>
+    <p className="text-sm">By Appointment Only &middot; Mon&ndash;Fri, 8am&ndash;5pm</p>
+    <p className="text-sm">Serving Central Georgia</p>
+    <p className="text-sm font-bold mt-2 text-white">Licensed &amp; Insured &middot; EPA 609 Certified</p>
     </div>
     <div>
-    <h3 className="text-white font-bold mb-4 uppercase">Location</h3>
-    <p className="text-sm">348 Lindsey Rd</p>
-    <p className="text-sm">Unadilla, GA 31091</p>
+    <h3 className="text-white font-bold mb-4 uppercase">Service Area</h3>
+    <p className="text-sm">14 counties across Central Georgia,</p>
+    <p className="text-sm">from Macon down to Tifton.</p>
+    <p className="text-sm mt-2">Travel fee may apply beyond 30 miles.</p>
+    <p className="text-sm mt-2">Drop-off or pickup available for larger jobs.</p>
     </div>
     <div>
     <h3 className="text-white font-bold mb-4 uppercase">Contact</h3>
-    <p className="text-sm">Text or Call: 229-699-2496</p>
+    <p className="text-sm">
+    Text or Call:{" "}
+    <a href="tel:2296992496" className="hover:text-white transition">229-699-2496</a>
+    </p>
+    <p className="text-sm">
+    <a href="mailto:tylerheatingandairga@gmail.com" className="hover:text-white transition">
+    tylerheatingandairga@gmail.com
+    </a>
+    </p>
     <p className="text-sm">tylerheatingandair.com</p>
     </div>
     </div>

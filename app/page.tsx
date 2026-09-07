@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-slate-900">
@@ -7,10 +5,13 @@ export default function Home() {
     <section className="relative bg-slate-900 text-white py-16 px-6 text-center">
     <div className="max-w-4xl mx-auto">
     <h1 className="text-4xl md:text-6xl font-black mb-4 uppercase tracking-tight">
-    Automotive <span className="text-orange-500">A/C</span> & <span className="text-blue-400">Electrical</span>
+    Mobile Automotive <span className="text-orange-500">A/C</span> and <span className="text-blue-400">Heat</span>
     </h1>
-    <p className="text-xl md:text-2xl font-semibold mb-8">
-    Mobile & Shop Service by Appointment Only
+    <p className="text-xl md:text-2xl font-semibold mb-3">
+    By Appointment Only &middot; Serving Central Georgia
+    </p>
+    <p className="text-base md:text-lg text-slate-300 mb-8">
+    Mobile service throughout Central Georgia. Vehicle drop-off and pickup available for larger jobs.
     </p>
     <div className="flex flex-col sm:flex-row justify-center gap-4">
     <a
@@ -34,15 +35,51 @@ export default function Home() {
     <h2 className="text-3xl font-bold text-center mb-12 uppercase">Professional Services</h2>
     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
     {[
-      "Automotive A/C and Heat",
-      "Electrical Diagnostics & Repair",
-      "Starting & Charging Systems",
-      "General Auto Maintenance"
+      "A/C Diagnosis & Leak Detection",
+      "Recharge & Refrigerant Service",
+      "Compressor & Component Replacement",
+      "Heat, Defrost & Airflow Repair"
     ].map((service) => (
       <div key={service} className="p-6 border-2 border-slate-100 rounded-xl shadow-sm bg-slate-50 hover:border-orange-500 transition-colors">
       <p className="font-bold text-lg leading-tight">{service}</p>
       </div>
     ))}
+    </div>
+    </section>
+
+    {/* Service Area Section */}
+    <section className="bg-slate-50 border-t border-slate-100 py-16 px-6">
+    <div className="max-w-4xl mx-auto text-center">
+    <h2 className="text-3xl font-bold mb-4 uppercase">Service Area</h2>
+    <p className="text-lg text-slate-600 mb-8">
+    Mobile service across Central Georgia, based in Unadilla. Counties we regularly serve:
+    </p>
+    <div className="flex flex-wrap justify-center gap-3">
+    {[
+      "Dooly",
+      "Houston",
+      "Bibb",
+      "Peach",
+      "Macon",
+      "Sumter",
+      "Pulaski",
+      "Bleckley",
+      "Wilcox",
+      "Dodge",
+      "Crisp",
+      "Turner",
+      "Worth",
+      "Tift"
+    ].map((county) => (
+      <span key={county} className="bg-white border border-slate-200 rounded-full px-4 py-2 text-sm font-semibold text-slate-700">
+      {county} County
+      </span>
+    ))}
+    </div>
+    <p className="text-sm text-slate-500 mt-8 max-w-2xl mx-auto">
+    This isn&apos;t a hard boundary &mdash; contact us about service just outside the listed counties.
+    A travel fee may apply for trips beyond 30 miles.
+    </p>
     </div>
     </section>
     </main>
