@@ -66,7 +66,7 @@ export default function RootLayout({
     <p className="text-sm">Mobile Automotive A/C and Heat</p>
     <p className="text-sm">By Appointment Only &middot; Mon&ndash;Fri, 8am&ndash;5pm</p>
     <p className="text-sm">Serving Central Georgia</p>
-    <p className="text-sm font-bold mt-2 text-white">Licensed &amp; Insured &middot; EPA 609 Certified</p>
+    <p className="text-sm font-bold mt-2 text-white">Licensed &amp; Insured</p>
     </div>
     <div>
     <h3 className="text-white font-bold mb-4 uppercase">Service Area</h3>
