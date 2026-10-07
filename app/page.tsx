@@ -52,33 +52,30 @@ export default function Home() {
     <div className="max-w-4xl mx-auto text-center">
     <h2 className="text-3xl font-bold mb-4 uppercase">Service Area</h2>
     <p className="text-lg text-slate-600 mb-8">
-    Mobile service across Central Georgia, based in Unadilla. Counties we regularly serve:
+    Mobile service across Central Georgia, based in Unadilla. Travel is priced by county, with one travel fee per visit.
     </p>
-    <div className="flex flex-wrap justify-center gap-3">
+    <div className="grid gap-6 md:grid-cols-3 text-left">
     {[
-      "Dooly",
-      "Houston",
-      "Bibb",
-      "Peach",
-      "Macon",
-      "Sumter",
-      "Pulaski",
-      "Bleckley",
-      "Wilcox",
-      "Dodge",
-      "Crisp",
-      "Turner",
-      "Worth",
-      "Tift"
-    ].map((county) => (
-      <span key={county} className="bg-white border border-slate-200 rounded-full px-4 py-2 text-sm font-semibold text-slate-700">
-      {county} County
-      </span>
+      { name: "Zone 1", fee: "No travel fee", counties: ["Dooly", "Pulaski", "Crisp", "Bleckley", "Wilcox", "Macon"] },
+      { name: "Zone 2", fee: "$40 travel fee", counties: ["Houston", "Peach", "Sumter", "Turner", "Dodge"] },
+      { name: "Zone 3", fee: "$75 travel fee", counties: ["Bibb", "Worth", "Tift"] }
+    ].map((zone) => (
+      <div key={zone.name} className="bg-white border border-slate-200 rounded-xl p-5">
+      <h3 className="font-bold text-slate-800 uppercase">{zone.name}</h3>
+      <p className="text-sm font-semibold text-slate-500 mb-3">{zone.fee}</p>
+      <div className="flex flex-wrap gap-2">
+      {zone.counties.map((county) => (
+        <span key={county} className="bg-slate-50 border border-slate-200 rounded-full px-3 py-1 text-sm font-semibold text-slate-700">
+        {county} County
+        </span>
+      ))}
+      </div>
+      </div>
     ))}
     </div>
     <p className="text-sm text-slate-500 mt-8 max-w-2xl mx-auto">
     This isn&apos;t a hard boundary &mdash; contact us about service just outside the listed counties.
-    A travel fee may apply for trips beyond 30 miles.
+    Your travel fee is based on the county where the vehicle is located and is charged once per visit. It is credited back when you approve a repair of $300 or more.
     </p>
     </div>
     </section>
