@@ -1,3 +1,6 @@
+import ZoneMap from "./ZoneMap";
+import { ZONES } from "./zones";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-slate-900">
@@ -54,14 +57,14 @@ export default function Home() {
     <p className="text-lg text-slate-600 mb-8">
     Mobile service across Central Georgia, based in Unadilla. Travel is priced by county, with one travel fee per visit.
     </p>
+    <ZoneMap />
     <div className="grid gap-6 md:grid-cols-3 text-left">
-    {[
-      { name: "Zone 1", fee: "No travel fee", counties: ["Dooly", "Pulaski", "Crisp", "Bleckley", "Wilcox", "Macon"] },
-      { name: "Zone 2", fee: "$40 travel fee", counties: ["Houston", "Peach", "Sumter", "Turner", "Dodge"] },
-      { name: "Zone 3", fee: "$75 travel fee", counties: ["Bibb", "Worth", "Tift"] }
-    ].map((zone) => (
+    {ZONES.map((zone) => (
       <div key={zone.name} className="bg-white border border-slate-200 rounded-xl p-5">
-      <h3 className="font-bold text-slate-800 uppercase">{zone.name}</h3>
+      <h3 className="font-bold text-slate-800 uppercase flex items-center gap-2">
+      <span className="inline-block w-3 h-3 rounded-sm border border-slate-300" style={{ backgroundColor: zone.fill }} />
+      {zone.name}
+      </h3>
       <p className="text-sm font-semibold text-slate-500 mb-3">{zone.fee}</p>
       <div className="flex flex-wrap gap-2">
       {zone.counties.map((county) => (
@@ -74,8 +77,8 @@ export default function Home() {
     ))}
     </div>
     <p className="text-sm text-slate-500 mt-8 max-w-2xl mx-auto">
-    This isn&apos;t a hard boundary &mdash; contact us about service just outside the listed counties.
-    Your travel fee is based on the county where the vehicle is located and is charged once per visit. It is credited back when you approve a repair of $300 or more.
+    Outside these counties? Call or text for a quote.
+    Your travel fee is based on the county where the vehicle is located and is charged once per visit. It is credited back when you approve a repair of $500 or more.
     </p>
     </div>
     </section>

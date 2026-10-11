@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { COUNTY_COUNT } from "./zones";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Tyler Heating & Air LLC | Mobile Automotive A/C and Heat",
-  description: "Mobile automotive A/C and heat service by appointment only, Mon-Fri. Serving 14 counties across Central Georgia including Houston, Bibb, Dooly, Peach, Crisp, Tift, and Sumter. Diagnosis, recharge, leak repair, and component replacement.",
+  description: `Mobile automotive A/C and heat service by appointment only, Mon-Fri. Serving ${COUNTY_COUNT} counties across Central Georgia including Houston, Bibb, Dooly, Peach, Crisp, Lee, and Sumter. Diagnosis, recharge, leak repair, and component replacement.`,
 };
 
 export default function RootLayout({
@@ -70,7 +71,7 @@ export default function RootLayout({
     </div>
     <div>
     <h3 className="text-white font-bold mb-4 uppercase">Service Area</h3>
-    <p className="text-sm">14 counties across Central Georgia,</p>
+    <p className="text-sm">{COUNTY_COUNT} counties across Central Georgia,</p>
     <p className="text-sm">from Macon down to Tifton.</p>
     <p className="text-sm mt-2">Travel fee by county, once per visit.</p>
     <p className="text-sm mt-2">Drop-off or pickup available for larger jobs.</p>
