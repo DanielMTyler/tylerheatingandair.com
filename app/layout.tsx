@@ -88,6 +88,25 @@ export default function RootLayout({
     </a>
     </p>
     <p className="text-sm">tylerheatingandair.com</p>
+    <p className="text-sm mt-2">
+    <a
+    href="https://www.facebook.com/profile.php?id=61594824293297"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-white transition"
+    >
+    Facebook
+    </a>
+    {" "}&middot;{" "}
+    <a
+    href="https://share.google/MEAoLkUVHofFy08VL"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-white transition"
+    >
+    Google Reviews
+    </a>
+    </p>
     </div>
     </div>
     <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-slate-800 text-center text-xs">
