@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { COUNTY_COUNT } from "./zones";
+import { FooterSocialLinks, HeaderSocialLinks } from "./SocialLinks";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,7 +42,8 @@ export default function RootLayout({
     </div>
 
     {/* Contact Actions */}
-    <nav className="flex items-center gap-6">
+    <nav className="flex items-center gap-4 sm:gap-6">
+    <HeaderSocialLinks />
     <a href="tel:2296992496" className="font-bold text-slate-900 hover:text-orange-600 transition">
     229-699-2496
     </a>
@@ -88,25 +90,7 @@ export default function RootLayout({
     </a>
     </p>
     <p className="text-sm">tylerheatingandair.com</p>
-    <p className="text-sm mt-2">
-    <a
-    href="https://www.facebook.com/profile.php?id=61594824293297"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="hover:text-white transition"
-    >
-    Facebook
-    </a>
-    {" "}&middot;{" "}
-    <a
-    href="https://share.google/MEAoLkUVHofFy08VL"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="hover:text-white transition"
-    >
-    Google Reviews
-    </a>
-    </p>
+    <FooterSocialLinks />
     </div>
     </div>
     <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-slate-800 text-center text-xs">
