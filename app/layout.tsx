@@ -72,7 +72,7 @@ export default function RootLayout({
     <div>
     <h3 className="text-white font-bold mb-4 uppercase">Service Area</h3>
     <p className="text-sm">{COUNTY_COUNT} counties across Central Georgia,</p>
-    <p className="text-sm">from Macon down to Tifton.</p>
+    <p className="text-sm">from Macon down to Sylvester.</p>
     <p className="text-sm mt-2">Travel fee by county, once per visit.</p>
     <p className="text-sm mt-2">Drop-off or pickup available for larger jobs.</p>
     </div>
