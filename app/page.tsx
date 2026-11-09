@@ -48,6 +48,11 @@ export default function Home() {
       </div>
     ))}
     </div>
+    <p className="mt-8 text-center">
+    <span className="inline-block bg-orange-50 border-2 border-orange-500 rounded-lg px-5 py-3 font-bold text-lg">
+    Up to 1 hour of diagnosis credited toward any repair over $500
+    </span>
+    </p>
     </section>
 
     {/* Service Area Section */}
