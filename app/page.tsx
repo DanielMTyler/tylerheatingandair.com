@@ -53,6 +53,9 @@ export default function Home() {
     Up to 1 hour of diagnosis credited toward any repair over $500
     </span>
     </p>
+    <p className="mt-3 text-center text-slate-600">
+    Most diagnoses take about an hour, so on a repair over $500 your diagnosis is usually covered.
+    </p>
     </section>
 
     {/* Service Area Section */}
