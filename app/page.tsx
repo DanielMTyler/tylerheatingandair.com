@@ -78,7 +78,7 @@ export default function Home() {
     </div>
     <p className="text-sm text-slate-500 mt-8 max-w-2xl mx-auto">
     Outside these counties? Call or text for a quote.
-    Your travel fee is based on the county where the vehicle is located and is charged once per visit. It is credited back when you approve a repair of $500 or more.
+    Your travel fee is based on the county where the vehicle is located and is charged once per visit. When you approve a repair over $500, up to 1 hour of diagnosis ($150) is credited toward that repair. Travel fees are not credited.
     </p>
     </div>
     </section>
