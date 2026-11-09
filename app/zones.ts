@@ -19,7 +19,7 @@ export const ZONES: Zone[] = [
   {
     name: "Zone 2",
     fee: "$40 travel fee",
-    counties: ["Sumter", "Turner", "Dodge", "Twiggs", "Crawford", "Schley", "Lee"],
+    counties: ["Sumter", "Turner", "Dodge", "Twiggs", "Crawford", "Schley", "Lee", "Taylor"],
     fill: "#60a5fa",
     dark: false,
   },
