@@ -50,11 +50,11 @@ export default function Home() {
     </div>
     <p className="mt-8 text-center">
     <span className="inline-block bg-orange-50 border-2 border-orange-500 rounded-lg px-5 py-3 font-bold text-lg">
-    Up to 1 hour of diagnosis credited toward any repair over $500
+    Up to 1 hour of diagnosis credited toward any approved repair
     </span>
     </p>
     <p className="mt-3 text-center text-slate-600">
-    Most diagnoses take about an hour, so on a repair over $500 your diagnosis is usually covered.
+    Most diagnoses take about an hour, so when you approve a repair your diagnosis is usually covered.
     </p>
     <p className="mt-6 text-center font-semibold text-slate-800">
     90-day warranty on labor. Parts carry the manufacturer&apos;s warranty.
