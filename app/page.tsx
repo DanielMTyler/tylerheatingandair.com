@@ -54,8 +54,8 @@ export default function Home() {
     <div className="flex flex-col gap-6">
     <div className="grid md:grid-cols-3 gap-6">
     {[
-      { name: "A/C Check", price: "$95", note: "Gauges, vent temps and a UV leak check" },
-      { name: "Heat Check", price: "$95", note: "Coolant, engine temp, heater hoses, blower and blend door" },
+      { name: "A/C Check", price: "$95", note: "Performance test and leak check" },
+      { name: "Heat Check", price: "$95", note: "Performance test and coolant system check" },
       { name: "A/C Recharge", price: "from $225", note: "R-134a $225 · R-1234yf $365. Leak test, vacuum, dye and up to 2 lb of refrigerant" },
     ].map((item) => (
       <div key={item.name} className="p-6 border-2 border-slate-100 rounded-xl shadow-sm bg-white text-center">
