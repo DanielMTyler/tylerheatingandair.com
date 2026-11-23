@@ -54,7 +54,7 @@ export default function Home() {
     </span>
     </p>
     <p className="mt-3 text-center text-slate-600">
-    Most diagnoses take about an hour, so when you approve a repair your diagnosis is usually covered.
+    Most diagnoses take about an hour, so when you approve a repair your diagnosis is usually covered. A quick A/C or heat check is credited in full when you approve the work that same visit.
     </p>
     <p className="mt-6 text-center font-semibold text-slate-800">
     90-day warranty on labor. Parts carry the manufacturer&apos;s warranty.
