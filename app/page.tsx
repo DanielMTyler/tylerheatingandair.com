@@ -48,6 +48,29 @@ export default function Home() {
       </div>
     ))}
     </div>
+
+    {/* Upfront Prices */}
+    <h2 className="text-3xl font-bold text-center mt-16 mb-8 uppercase">Upfront Prices</h2>
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {[
+      { name: "A/C Check", price: "$95", note: "Gauges, vent temps and a UV leak check" },
+      { name: "Heat Check", price: "$95", note: "Coolant, engine temp, heater hoses, blower and blend door" },
+      { name: "A/C Recharge", price: "from $225", note: "R-134a $225 · R-1234yf $365. Leak test, vacuum, dye and up to 2 lb of refrigerant" },
+      { name: "Diagnosis", price: "$150", note: "Up to 1 hour, for problems a quick check can't pin down" },
+    ].map((item) => (
+      <div key={item.name} className="p-6 border-2 border-slate-100 rounded-xl shadow-sm bg-white text-center">
+      <p className="font-bold text-lg uppercase">{item.name}</p>
+      <p className="text-3xl font-black text-orange-600 my-2">{item.price}</p>
+      <p className="text-sm text-slate-600">{item.note}</p>
+      </div>
+    ))}
+    </div>
+    <p className="mt-4 text-center text-slate-600">
+    Most 1994 to mid-2010s vehicles use R-134a. Most newer ones use R-1234yf. Not sure? Text me the year, make and model and I&apos;ll tell you which.
+    </p>
+    <p className="mt-1 text-center text-sm text-slate-500">
+    Travel is extra outside Zone 1. See the service area below.
+    </p>
     <p className="mt-8 text-center">
     <span className="inline-block bg-orange-50 border-2 border-orange-500 rounded-lg px-5 py-3 font-bold text-lg">
     Up to 1 hour of diagnosis credited toward any approved repair
