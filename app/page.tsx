@@ -51,6 +51,7 @@ export default function Home() {
 
     {/* Upfront Prices */}
     <h2 className="text-3xl font-bold text-center mt-16 mb-8 uppercase">Upfront Prices</h2>
+    <div className="flex flex-col gap-6">
     <div className="grid md:grid-cols-3 gap-6">
     {[
       { name: "A/C Check", price: "$95", note: "Gauges, vent temps and a UV leak check" },
@@ -64,35 +65,40 @@ export default function Home() {
       </div>
     ))}
     </div>
-    <p className="mt-4 text-center text-slate-600">
+
+    <p className="text-center text-slate-600">
     Most 1994 to mid-2010s vehicles use R-134a. Most newer ones use R-1234yf. Not sure? Text me the year, make and model and I&apos;ll tell you which.
     </p>
 
     {/* Diagnosis */}
-    <div className="mt-10 bg-slate-900 text-white rounded-xl p-6 md:p-8 flex flex-col md:flex-row md:items-center gap-4 md:gap-8 text-center md:text-left">
+    <div className="bg-slate-900 text-white rounded-xl p-6 flex flex-col md:flex-row md:items-center gap-4 md:gap-8 text-center md:text-left">
     <div className="md:w-1/3">
     <p className="text-sm font-semibold text-blue-300 uppercase tracking-wide">Need more than a check?</p>
-    <p className="font-bold text-2xl uppercase mt-1">Diagnosis</p>
-    <p className="text-4xl font-black text-orange-500 mt-1">$150</p>
+    <p className="font-bold text-lg uppercase mt-2">Diagnosis</p>
+    <p className="text-3xl font-black text-orange-500 my-2">$150</p>
     </div>
-    <p className="md:w-2/3 text-slate-200 text-lg">
+    <p className="md:w-2/3 text-slate-200">
     Up to 1 hour of hands-on testing to find problems a quick check can&apos;t pin down, like electrical faults and problems that come and go.
     </p>
     </div>
 
     {/* Credit */}
-    <div className="mt-6 bg-orange-50 border-2 border-orange-500 rounded-xl p-6 text-center">
-    <p className="font-bold text-xl">Your check or diagnosis comes off the repair</p>
+    <div className="bg-orange-50 border-2 border-orange-500 rounded-xl p-6 text-center">
+    <p className="font-bold text-lg">Your check or diagnosis comes off the repair</p>
     <p className="mt-2 text-slate-700">
     Approve a repair the same visit and what you paid for the check, or up to 1 hour of diagnosis, is credited in full. The work can be done another day.
     </p>
     </div>
-    <p className="mt-3 text-center text-sm text-slate-500">
-    Travel is extra outside Zone 1 and isn&apos;t credited. See the service area below.
-    </p>
-    <p className="mt-6 text-center font-semibold text-slate-800">
+
+    <div className="text-center">
+    <p className="font-semibold text-slate-800">
     90-day warranty on labor. Parts carry the manufacturer&apos;s warranty.
     </p>
+    <p className="mt-2 text-sm text-slate-500">
+    Travel is extra outside Zone 1 and isn&apos;t credited. See the service area below.
+    </p>
+    </div>
+    </div>
     </section>
 
     {/* Service Area Section */}
