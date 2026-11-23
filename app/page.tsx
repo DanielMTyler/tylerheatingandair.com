@@ -98,7 +98,7 @@ export default function Home() {
     Travel is extra outside Zone 1 and isn&apos;t credited. See the service area below.
     </p>
     <p className="mt-2 text-sm text-slate-500">
-    A 50% deposit is required to schedule repairs. The balance is due when the work is complete.
+    Quoted repairs require a 50% deposit to schedule. The balance is due when the work is complete.
     </p>
     </div>
     </div>
